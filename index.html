@@ -1,7 +1,7 @@
 <html>
 <header>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -31,8 +31,8 @@
     $("#portfolio").click(function(){
         $("#content").load("portfolio.html");
     });
-    $("#grains").click(function(){
-        $("#content").load("research_grains.html");
+    $("#howtos").click(function(){
+        $("#content").load("howtos.html");
     });
 	});
 </script>
@@ -40,6 +40,7 @@
 <meta name="keywords" content="CarolynMatl, Robotics, Perception, Manipulation, Research, Berkeley, Princeton">
 <meta name="author" content="Carolyn Matl">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="Td214mhGHHnAtdNSVAtb6YVpMiKHoHJaCwi49ePqWDg" />
 <title>Carolyn Matl</title>
 </header>
 <body>
@@ -48,21 +49,22 @@
 <div id="header">
 	<div class="mx-auto" style="width: 820px;">
 		<div class="row menubar">
-			<div class="col-4">
+			<div class="col-4" style="padding-right: 10px;">
 				<a class="myname" href="#" id="about">carolyn matl (chen)</a>
 			</div>
-            <div class="col-2" style="padding-left: 180px;">
-            </div>
-    		<div class="col-1 menuitem">
+    		<div class="col-1 menuitem"  style="padding-left: 20px;">
     			<a href="#" id="research">research</a>
     		</div>
-    		<div class="col-2 menuitem">
-    			<a href="#" id="portfolio">portfolio</a>
-    		</div>
-            <div class="col-1 menuitem">
+            <div class="col-1 menuitem" style="padding-left: 80px;">
                 <a href="#" id="cv">cv</a>
             </div>
-    		<div class="col-1 menuitem" style="padding-left: 50px;">
+    		<div class="col-2 menuitem" style="padding-left: 80px;">
+    			<a href="#" id="portfolio">portfolio</a>
+    		</div>
+            <div class="col-2 menuitem" style="padding-left: 40px;">
+                <a href="#" id="howtos">how-to's</a>
+            </div>
+    		<div class="col-1 menuitem" style="padding-left: 70px;">
     			<a href="#" id="about2">about</a>
     		</div>
 		</div>

@@ -1,6 +1,16 @@
 <html>
 <script>
   $(document).ready(function(){
+    $("#deformable").click(function(){
+        $("#content").load("research_deformable.html");
+    });
+    $("#stretch").click(function(){
+        $("#content").load("research_stretch.html");
+    });
+    $("#stressed").click(function(){
+        // window.location.assign("research_stressed.html");
+        $("#content").load("research_stressed.html");
+    });
     $("#grains").click(function(){
         $("#content").load("research_grains.html");
     });
@@ -33,11 +43,62 @@
 <div class="mx-auto" style="width: 820px;">
   <div class="row content">
     <div class="col-6">
-      <p style="font-variant: small-caps;"">unconventional robotic perception</p>
+      <p style="font-variant: small-caps;"">robotic interactive perception</p>
     </div>
     <div class="col-6">
     </div>
   </div>
+  <div class="row" style="padding-top: 20px">
+    <a class="col-4 container2" href="#" id="deformable" >
+        <img src="images/2021-deformable.png" width="270"/>
+        <div class="overlay3">
+        <div class="hovertext" style="font-variant: small-caps;"> Dough Rolling with a Soft Hand
+        </div>
+      </div>
+    </a>
+
+    <a class="col-4 container2" href="#" id="stretch" >
+        <img src="images/2021-icra-stretch.png" width="270"/>
+        <div class="overlay3">
+        <div class="hovertext" style="font-variant: small-caps;"> Stiffness from a Soft Tactile Hand
+        </div>
+      </div>
+    </a>
+    
+    <a class="col-4 container2" href="#" id="stressed" >
+        <img src="images/2020-corl-stressd.png" width="270"/>
+        <div class="overlay3">
+        <div class="hovertext" style="font-variant: small-caps;"> Stochastic Dynamics from Sound
+        </div>
+      </div>
+    </a>
+  </div>
+<!--   <div class="row" style="padding-top: 20px">
+    <a class="col-4 container2" href="#" id="brahms" >
+        <img src="images/2019-iros-haptic.png" width="266"/>
+        <div class="overlay2">
+        <div class="hovertext" style="font-variant: small-caps;"> Liquids from Force
+        </div>
+      </div>
+    </a>
+
+    <a class="col-4 container2" href="#" id="twoperformers" >
+        <img src="images/2018-iros-softcell.png" width="266"/>
+        <div class="overlay2">
+        <div class="hovertext" style="font-variant: small-caps;"> Soft Tactile Sensor / Actuator
+        </div>
+      </div>
+    </a>
+    
+    <a class="col-4 container2" href="#" id="ghostline" >
+        <img src="images/2016-simpar-tactile.png" width="266"/>
+        <div class="overlay2">
+        <div class="hovertext" style="font-variant: small-caps;"> Container Contents from Vibrations
+        </div>
+      </div>
+    </a>
+  </div> -->
+
   <div class="row" style="padding-top: 20px">
 
     <a class="col-3 container" href="#" id="grains" >
@@ -69,6 +130,7 @@
       </div>
     </a>
   </div>
+  <!--  -->
 
   <div class="row" style="padding-top: 50px">
     <div class="col-6">
